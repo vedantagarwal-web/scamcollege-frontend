@@ -1,36 +1,113 @@
-.home-container {
+/* Home.css */
+
+@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap'); /* Added a distinct font for headings */
+
+body {
+  font-family: 'SF Pro Display', sans-serif;
+  background: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
   padding: 20px;
+  background: linear-gradient(to bottom, #d32f2f, #ff6b6b, #ffffff);
 }
 
 .hero-section {
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  padding: 120px 20px;
+  background: linear-gradient(to bottom, rgba(211, 47, 47, 0.9), rgba(211, 47, 47, 0.7));
   color: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  margin-bottom: 40px;
 }
 
 .hero-section h1 {
+  font-family: 'Playfair Display', serif; /* Changed font for a distinct look */
   font-size: 3em;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .hero-section p {
   font-size: 1.2em;
-}
-
-.services-section, .how-it-works-section, .testimonials-section, .blog-section, .highlighted-essays-section {
-  background: white;
-  padding: 60px 20px;
-  margin: 20px 0;
-}
-
-.services-section h2, .how-it-works-section h2, .testimonials-section h2, .blog-section h2, .highlighted-essays-section h2 {
-  font-size: 2em;
   margin-bottom: 20px;
 }
 
-.services-section p, .how-it-works-section p, .testimonials-section p, .blog-section p, .highlighted-essays-section p {
+.hero-section button {
+  background-color: white;
+  color: #d32f2f;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.hero-section button:hover {
+  background-color: #ff4b4b;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.sections-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.section {
+  background: linear-gradient(to bottom, rgba(211, 47, 47, 0.8), rgba(211, 47, 47, 0.6));
+  padding: 40px 20px;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: calc(50% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:nth-child(3) {
+  background: linear-gradient(to bottom, rgba(244, 67, 54, 0.8), rgba(244, 67, 54, 0.6));
+}
+
+.section:nth-child(4) {
+  background: linear-gradient(to bottom, rgba(255, 87, 34, 0.8), rgba(255, 87, 34, 0.6));
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.section-full {
+  flex: 1 1 100%;
+  min-width: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+}
+
+.section h2 {
+  font-family: 'Playfair Display', serif; /* Changed font for a distinct look */
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.section p {
   font-size: 1.1em;
   margin-bottom: 20px;
+}
+
+.how-it-works ol {
+  margin-left: 20px;
+  list-style-type: decimal;
 }
 
 .carousel {
@@ -39,14 +116,16 @@
 }
 
 .blog-post, .testimonial, .highlighted-essay {
-  background: #ff7e5f;
+  background: #d32f2f;
   color: white;
   padding: 20px;
   border-radius: 10px;
   margin: 10px 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
 .blog-post h2, .testimonial h2, .highlighted-essay h2 {
+  font-family: 'Playfair Display', serif; /* Changed font for a distinct look */
   font-size: 1.5em;
   margin-bottom: 10px;
 }

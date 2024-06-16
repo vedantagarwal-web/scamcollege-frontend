@@ -1,15 +1,21 @@
 /* src/styles/Navbar.css */
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
-  background-color: #c84b4b;
+  padding: 20px 40px; /* Increased padding for a larger navbar */
+  background: linear-gradient(to bottom, #d32f2f, #d32f2f); 
+  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar-brand {
-  font-size: 1.5em;
-  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the height for a larger logo */
 }
 
 .navbar-links {
@@ -17,6 +23,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  gap: 20px; /* Add gap between links */
 }
 
 .navbar-links li {
@@ -26,6 +33,12 @@
 .navbar-links a {
   color: white;
   text-decoration: none;
+  font-size: 18px; /* Increased font size */
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #ffeb3b; /* Subtle hover effect */
 }
 
 .navbar-user {
@@ -36,6 +49,7 @@
 .navbar-user span {
   color: white;
   margin-right: 10px;
+  font-size: 16px; /* Consistent font size */
 }
 
 .navbar-user button,
@@ -43,9 +57,16 @@
   background-color: #d9534f;
   color: white;
   border: none;
-  padding: 5px 10px;
-  margin-left: 5px;
+  padding: 10px 15px; /* Increased padding */
+  margin-left: 10px;
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
+  font-size: 16px; /* Consistent font size */
+  transition: background-color 0.3s;
+}
+
+.navbar-user button:hover,
+.navbar-user a:hover {
+  background-color: #c12e2a; /* Darker hover effect */
 }
