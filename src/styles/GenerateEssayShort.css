@@ -1,0 +1,21 @@
+.generate-essay-short {
+    margin: 20px 0;
+  }
+  
+  .generate-essay-short textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .generate-essay-short button {
+    background-color: #800000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .generate-essay-short p {
+    margin-top: 20px;
+  }

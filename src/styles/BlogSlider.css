@@ -1,0 +1,9 @@
+/* BlogSlider.css */
+.blog-post {
+    text-align: center;
+    padding: 20px;
+    background: #ff7e5f;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+  }

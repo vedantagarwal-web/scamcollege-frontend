@@ -1,0 +1,25 @@
+.about-container {
+    padding: 20px;
+    background: linear-gradient(90deg, rgba(128, 0, 0, 1) 0%, rgba(220, 20, 60, 1) 100%);
+    color: white;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+  }
+  
+  .about-section {
+    margin: 20px 0;
+  }
+  
+  .about-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }

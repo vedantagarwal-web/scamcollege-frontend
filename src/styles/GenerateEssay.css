@@ -1,0 +1,37 @@
+.generate-essay {
+  padding: 20px;
+  text-align: center;
+}
+
+.generate-essay h2 {
+  color: #b30000;
+}
+
+.generate-essay textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.generate-essay button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #b30000;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.essay-result {
+  margin-top: 20px;
+}
+
+.essay-result h3 {
+  color: #333;
+}
+
+.essay-result p {
+  text-align: left;
+  white-space: pre-wrap;
+}

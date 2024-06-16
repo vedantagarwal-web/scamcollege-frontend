@@ -1,0 +1,26 @@
+/* HighlightedEssays.css */
+.highlighted-essay {
+    text-align: center;
+    padding: 20px;
+    background: #ff7e5f;
+    color: white;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+  
+  .highlighted-essay button {
+    background-color: #feb47b;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  
+  .highlighted-essay button:hover {
+    background-color: #ff7e5f;
+  }

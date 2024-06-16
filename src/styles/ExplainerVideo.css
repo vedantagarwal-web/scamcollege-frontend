@@ -1,0 +1,23 @@
+/* src/styles/ExplainerVideo.css */
+.explainer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0;
+  }
+  
+  .explainer-content {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .explainer-content h2 {
+    margin-bottom: 10px;
+  }
+  
+  .explainer-content p {
+    margin: 5px 0;
+  }

@@ -1,0 +1,18 @@
+/* src/styles/Footer.css */
+.footer {
+  background: linear-gradient(to bottom, #a83232, #c84b4b, #eb7171);
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.footer a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}

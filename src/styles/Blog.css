@@ -1,0 +1,31 @@
+/* src/styles/Blog.css */
+
+.blog {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+}
+
+.blog h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.blog-post {
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.blog-post h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.blog-post p {
+  font-size: 1.2rem;
+}
