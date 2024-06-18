@@ -8,6 +8,7 @@ import Signup from './components/Signup';
 import GenerateEssay from './components/GenerateEssay';
 import ViewEssays from './components/ViewEssays';
 import Blog from './components/Blog';
+import BlogPost from './components/BlogPost'; // Import the BlogPost component
 import About from './components/About';
 import Footer from './components/Footer';
 import { auth } from './firebaseConfig';
@@ -38,7 +39,8 @@ function App() {
         <Route path="/signup" element={<Signup setUser={setUser} />} />
         <Route path="/generate-essay" element={<GenerateEssay user={user} />} />
         <Route path="/view-essays" element={<ViewEssays user={user} />} />
-        <Route path="/blog/:id" element={<Blog />} />
+        <Route path="/blog" element={<Blog />} /> {/* Route for Blog List */}
+        <Route path="/blog/:id" element={<BlogPost />} /> {/* Route for individual Blog Post */}
       </Routes>
       <Footer />
     </Router>

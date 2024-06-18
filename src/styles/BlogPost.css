@@ -1,0 +1,38 @@
+/* src/styles/BlogPost.css */
+
+.blog-post-container {
+    padding: 20px;
+    background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
+    min-height: 100vh; /* Ensure it covers the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .blog-post {
+    padding: 20px;
+    background: rgba(29, 30, 44, 0.8);
+    border-radius: 10px;
+    color: white;
+    border: 2px solid #00A8E8;
+    max-width: 800px; /* Limit the width for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .blog-post h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    font-size: 2.5rem;
+  }
+  
+  .blog-post p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .loading {
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+  }

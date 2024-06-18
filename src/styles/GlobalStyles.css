@@ -1,88 +1,122 @@
-/* src/styles/GlobalStyles.css */
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #8B0000, #FF4500); /* Blood-red to neon red gradient */
-    color: white;
-  }
-  
-  .app-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .form-container {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .form-container textarea {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    border: none;
-    resize: none;
-  }
-  
-  .form-container button {
-    width: 100%;
-    padding: 10px;
-    background-color: #FF4500;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .form-container button:disabled {
-    background-color: #8B0000;
-  }
-  
-  .spinner {
-    margin-top: 20px;
-    border: 4px solid rgba(255, 255, 255, 0.3);
-    border-top: 4px solid #FF4500;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    animation: spin 1s linear infinite;
-  }
-  
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-  
-  .essay-result {
-    margin-top: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 8px;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8); /* Dark blue to cyan gradient */
+  color: white;
+}
 
-  /* src/styles/GlobalStyles.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.form-container textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  resize: none;
+}
+
+.form-container button {
+  width: 100%;
+  padding: 10px;
+  background-color: #00A8E8;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container button:disabled {
+  background-color: #1D1E2C;
+}
+
+.spinner {
+  margin-top: 20px;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid #00A8E8;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
+.essay-result {
+  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 8px;
+}
+
 button, a {
-    transition: all 0.3s ease;
-  }
-  
-  button:hover, a:hover {
-    opacity: 0.8;
-  }
+  transition: all 0.3s ease;
+}
+
+button:hover, a:hover {
+  opacity: 0.8;
+}
+
+footer {
+  margin-top: auto; /* Pushes footer to the bottom */
+  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8); /* Consistent with body background */
+  padding: 20px;
+  text-align: center;
+  color: #E0E0E0;
+}
+
+footer a {
+  color: #E0E0E0;
+  margin: 0 10px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.blog-post-container {
+  padding: 20px;
+  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
+  min-height: 100vh; /* Ensure it covers the full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.blog-post {
+  padding: 20px;
+  background: rgba(29, 30, 44, 0.8);
+  border-radius: 10px;
+  color: white;
+  border: 2px solid #00A8E8;
+  max-width: 800px; /* Limit the width for readability */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

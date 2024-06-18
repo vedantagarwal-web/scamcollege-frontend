@@ -1,37 +1,37 @@
 /* src/styles/ViewEssays.css */
 .view-essays {
-    text-align: center;
-    padding: 2rem;
-    background: linear-gradient(to bottom, #8B0000, #B22222);
-    color: white;
-    min-height: 80vh;
-  }
-  
-  .view-essays h1 {
-    margin-bottom: 2rem;
-    font-size: 2.5rem;
-  }
-  
-  .view-essays ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .view-essays li {
-    background: #fff;
-    color: #333;
-    margin: 1rem 0;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
-  }
-  
-  .view-essays li:hover {
-    transform: translateY(-10px);
-  }
-  
-  .view-essays h2 {
-    color: #8B0000;
-    margin-bottom: 1rem;
-  }
+  text-align: center;
+  padding: 2rem;
+  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
+  color: white;
+  min-height: 80vh;
+}
+
+.view-essays h1 {
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+}
+
+.view-essays ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.view-essays li {
+  background: #1D1E2C;
+  color: white;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.view-essays li:hover {
+  transform: translateY(-10px);
+}
+
+.view-essays h2 {
+  color: #00A8E8; /* Brighter cyan for better readability */
+  margin-bottom: 1rem;
+}

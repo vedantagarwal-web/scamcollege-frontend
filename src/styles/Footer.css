@@ -1,15 +1,12 @@
-/* src/styles/Footer.css */
-
 .footer {
-  background: linear-gradient(to bottom, #ffffff, #ff6b6b);
-  color: #333;
+  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
+  color: #E0E0E0;
   text-align: center;
-  padding: 20px 20px;
-  box-shadow: 0 -8px 16px rgba(255, 255, 255, 0);
+  padding: 20px;
 }
 
 .footer a {
-  color: #333;
+  color: #E0E0E0;
   margin: 0 10px;
   text-decoration: none;
   font-size: 16px;

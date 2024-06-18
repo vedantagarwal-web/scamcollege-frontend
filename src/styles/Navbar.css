@@ -1,12 +1,9 @@
-/* src/styles/Navbar.css */
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px; /* Increased padding for a larger navbar */
-  background: linear-gradient(to bottom, #d32f2f, #d32f2f); 
-  /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); */
+  padding: 20px 40px;
+  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
 }
 
 .navbar-brand {
@@ -15,7 +12,7 @@
 }
 
 .navbar-logo {
-  height: 40px; /* Adjust the height for a larger logo */
+  height: 40px;
 }
 
 .navbar-links {
@@ -23,7 +20,7 @@
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 20px; /* Add gap between links */
+  gap: 20px;
 }
 
 .navbar-links li {
@@ -33,12 +30,12 @@
 .navbar-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px; /* Increased font size */
+  font-size: 18px;
   transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-  color: #ffeb3b; /* Subtle hover effect */
+  color: #ffeb3b;
 }
 
 .navbar-user {
@@ -49,24 +46,24 @@
 .navbar-user span {
   color: white;
   margin-right: 10px;
-  font-size: 16px; /* Consistent font size */
+  font-size: 16px;
 }
 
 .navbar-user button,
 .navbar-user a {
-  background-color: #d9534f;
+  background-color: #00A8E8; /* Brighter cyan */
   color: white;
   border: none;
-  padding: 10px 15px; /* Increased padding */
+  padding: 10px 15px;
   margin-left: 10px;
   cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 16px; /* Consistent font size */
+  font-size: 16px;
   transition: background-color 0.3s;
 }
 
 .navbar-user button:hover,
 .navbar-user a:hover {
-  background-color: #c12e2a; /* Darker hover effect */
+  background-color: #1D1E2C; /* Dark blue */
 }
