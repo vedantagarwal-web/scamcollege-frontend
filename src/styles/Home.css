@@ -1,186 +1,176 @@
-/* src/styles/Home.css */
-@import url('https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap'); /* Added a distinct font for headings */
-
+Home.css:
+/* Global Styles */
 body {
-  font-family: 'SF Pro Display', sans-serif;
-  background: #f0f0f0;
   margin: 0;
   padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
 }
 
-.home {
-  padding: 20px;
-  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
-}
-
-.hero-section {
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #1D1E2C, #00A8E8);
+  color: white;
   text-align: center;
-  padding: 120px 20px;
-  background: linear-gradient(to bottom, rgba(29, 30, 44, 0.9), rgba(0, 168, 232, 0.7));
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin-bottom: 40px;
+  padding: 50px 20px;
 }
 
-.hero-section h1 {
-  font-family: 'Playfair Display', serif; /* Changed font for a distinct look */
+.hero h1 {
   font-size: 3em;
-  font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
-.hero-section p {
+.hero p {
   font-size: 1.2em;
-  margin-bottom: 20px;
-}
-
-.hero-section button {
-  background-color: white;
-  color: #1D1E2C;
-  border: none;
-  padding: 15px 30px;
-  font-size: 1.2em;
-  font-weight: 600;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero-section button:hover {
-  background-color: #00A8E8;
-  color: white;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-}
-
-.sections-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.section {
-  background: linear-gradient(to bottom, rgba(29, 30, 44, 0.8), rgba(0, 168, 232, 0.6));
-  padding: 40px 20px;
-  color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  flex: 1;
-  min-width: calc(50% - 20px);
-  box-sizing: border-box;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.section-full {
-  flex: 1 1 100%;
-  min-width: 100%;
-  background: linear-gradient(to bottom, rgba(29, 30, 44, 0.8), rgba(0, 168, 232, 0.6));
-}
-
-.section:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.section h2 {
-  font-family: 'Playfair Display', serif; /* Changed font for a distinct look */
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.section p {
-  font-size: 1.1em;
-  margin-bottom: 20px;
-}
-
-.testimonial-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-
-.testimonial-item {
-  background: rgba(255, 255, 255, 0.1);
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  flex: 1;
+  margin-bottom: 30px;
 }
 
 .cta-button {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #00A8E8;
-  border: none;
-  border-radius: 4px;
+  background-color: #FF5733;
   color: white;
-  font-size: 16px;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 1em;
 }
-/* src/styles/Home.css (continued) */
 
 .cta-button:hover {
-  background-color: #007EA7;
+  background-color: #FF6E4A;
 }
 
-.testimonial-grid {
+/* Section Styles */
+section {
+  padding: 40px 20px;
+  margin: 0 auto;
+}
+
+.comparison {
+  background-color: #FFF;
+}
+
+.comparison h2, .highlighted-essays h2, .testimonials h2, .blog-posts h2, .faq h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.comparison-content, .highlighted-essays-content, .testimonials-content, .blog-posts-content, .faq-content {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
-.testimonial-item {
-  background: rgba(255, 255, 255, 0.1);
+.comparison-item, .highlighted-essay-item, .testimonial-item, .blog-post-item, .faq-item {
+  background-color: #FFF;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 10px;
   flex: 1;
+  max-width: 300px;
+  cursor: pointer;
 }
 
-.testimonial-item p {
+.comparison-item h3, .highlighted-essay-item h3, .testimonial-item h3, .blog-post-item h3, .faq-item h3 {
+  font-size: 1.5em;
   margin-bottom: 10px;
 }
 
-.section h2, .testimonial-item h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 2em;
-  font-weight: 600;
-  margin-bottom: 20px;
+/* Testimonials Section */
+.testimonials {
+  background-color: #f8f8f8;
 }
 
-.cta {
+.testimonials p {
   text-align: center;
-  padding: 50px 20px;
-  background: linear-gradient(to bottom, rgba(29, 30, 44, 0.9), rgba(0, 168, 232, 0.7));
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-  margin-top: 40px;
-}
-
-.cta h2 {
-  font-size: 2.5em;
-  margin-bottom: 20px;
-}
-
-.cta button {
-  background-color: white;
-  color: #1D1E2C;
-  border: none;
-  padding: 15px 30px;
   font-size: 1.2em;
-  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.testimonial-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.testimonial-item p {
+  font-size: 1em;
+  margin: 10px 0;
+}
+
+.testimonial-user {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.testimonial-user img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* FAQ Section */
+.faq {
+  background-color: #f0f0f0;
+}
+
+.faq .MuiAccordion-root {
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.faq .MuiAccordionSummary-root {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq .MuiAccordionSummary-content {
+  font-size: 1.2em;
+}
+
+.faq .MuiAccordionDetails-root {
+  font-size: 1em;
+  padding: 15px;
+}
+
+/* Icon Styles */
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Carousel Styles */
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.highlighted-essay-item, .testimonial-item, .blog-post-item {
+  transition: transform 0.3s ease;
+}
+
+.highlighted-essay-item:hover, .testimonial-item:hover, .blog-post-item:hover {
+  transform: scale(1.05);
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #007BFF;
+  color: white;
 }
 
-.cta button:hover {
-  background-color: #00A8E8;
-  color: white;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.button:hover {
+  background-color: #0056b3;
 }
