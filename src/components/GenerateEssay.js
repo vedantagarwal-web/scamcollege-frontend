@@ -3,6 +3,7 @@ import axios from 'axios';
 import ReactFlow, { addEdge, Background, Controls, MiniMap } from 'reactflow';
 import 'reactflow/dist/style.css';
 import '../styles/GenerateEssay.css'; // Ensure this path is correct
+import { Oval } from 'react-loader-spinner'; // Import the loading spinner component
 
 function GenerateEssay({ user }) {
   const [background1, setBackground1] = useState('');
@@ -76,6 +77,13 @@ function GenerateEssay({ user }) {
       <button onClick={handleGenerate} disabled={loading}>
         {loading ? 'Generating...' : 'Generate'}
       </button>
+
+      {loading && (
+        <div className="loading-spinner">
+          <Oval height={80} width={80} color="#4fa94d" ariaLabel="loading" />
+        </div>
+      )}
+
       {essay && (
         <div className="essay-result">
           <h3>Your Essay</h3>

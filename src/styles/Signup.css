@@ -1,40 +1,88 @@
-.signup {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px;
-  text-align: center;
-}
-
-.signup h1 {
-  color: #b30000;
-}
-
-.signup form {
+/* src/styles/Signup.css */
+.signup-container {
   display: flex;
-  flex-direction: column;
-  gap: 15px;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  background: transparent; /* Ensure the background is transparent to see particles */
 }
 
-.signup input {
-  padding: 10px;
+.signup {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  z-index: 1;
+}
+
+.welcome-text {
+  font-size: 1em;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container i {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007ACC;
+}
+
+.input-container input {
+  padding: 12px 12px 12px 40px;
   font-size: 16px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 4px;
 }
 
 .signup button {
-  padding: 10px;
+  padding: 12px;
   font-size: 16px;
-  background-color: #b30000;
+  background-color: #007ACC;
   color: white;
   border: none;
   cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
 }
 
 .google-signin {
+  padding: 12px;
+  font-size: 16px;
   background-color: #db4437;
   color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
 }
 
 .error {
   color: red;
   font-size: 14px;
+}
+
+#tsparticles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }

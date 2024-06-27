@@ -1,68 +1,84 @@
-Home.css:
+/* Home.css */
+
 /* Global Styles */
 body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f0f0f0;
+  background: linear-gradient(to bottom right, #007ACC, #00A8E8); /* Lighter and brighter blue gradient */
   color: #333;
 }
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #1D1E2C, #00A8E8);
+  background: linear-gradient(to right, #007ACC, #00A8E8);
   color: white;
   text-align: center;
-  padding: 50px 20px;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 3em;
+  font-size: 4em;
   margin-bottom: 20px;
 }
 
 .hero p {
-  font-size: 1.2em;
+  font-size: 1.5em;
   margin-bottom: 30px;
 }
 
 .cta-button {
-  background-color: #FF5733;
+  background-color: #007ACC; /* Updated to match the overall color scheme */
   color: white;
   padding: 15px 30px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 .cta-button:hover {
-  background-color: #FF6E4A;
+  background-color: #0056b3;
 }
 
 /* Section Styles */
 section {
-  padding: 40px 20px;
+  padding: 60px 20px;
   margin: 0 auto;
 }
 
 .comparison {
-  background-color: #FFF;
+  background: linear-gradient(to bottom, #E0F7FA, #ffffff); /* Gradient background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.comparison h2, .highlighted-essays h2, .testimonials h2, .blog-posts h2, .faq h2 {
+.comparison h2,
+.highlighted-essays h2,
+.testimonials h2,
+.blog-posts h2,
+.faq h2 {
   text-align: center;
   font-size: 2em;
   margin-bottom: 20px;
 }
 
-.comparison-content, .highlighted-essays-content, .testimonials-content, .blog-posts-content, .faq-content {
+.comparison-content,
+.highlighted-essays-content,
+.testimonials-content,
+.blog-posts-content,
+.faq-content {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
 
-.comparison-item, .highlighted-essay-item, .testimonial-item, .blog-post-item, .faq-item {
+.comparison-item,
+.highlighted-essay-item,
+.testimonial-item,
+.blog-post-item,
+.faq-item {
   background-color: #FFF;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -73,14 +89,21 @@ section {
   cursor: pointer;
 }
 
-.comparison-item h3, .highlighted-essay-item h3, .testimonial-item h3, .blog-post-item h3, .faq-item h3 {
+.comparison-item h3,
+.highlighted-essay-item h3,
+.testimonial-item h3,
+.blog-post-item h3,
+.faq-item h3 {
   font-size: 1.5em;
   margin-bottom: 10px;
 }
 
 /* Testimonials Section */
 .testimonials {
-  background-color: #f8f8f8;
+  background: linear-gradient(to bottom, #E0F7FA, #ffffff); /* Gradient background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .testimonials p {
@@ -116,7 +139,10 @@ section {
 
 /* FAQ Section */
 .faq {
-  background-color: #f0f0f0;
+  background: linear-gradient(to bottom, #E0F7FA, #ffffff); /* Gradient background */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .faq .MuiAccordion-root {
@@ -154,11 +180,15 @@ section {
   justify-content: center;
 }
 
-.highlighted-essay-item, .testimonial-item, .blog-post-item {
+.highlighted-essay-item,
+.testimonial-item,
+.blog-post-item {
   transition: transform 0.3s ease;
 }
 
-.highlighted-essay-item:hover, .testimonial-item:hover, .blog-post-item:hover {
+.highlighted-essay-item:hover,
+.testimonial-item:hover,
+.blog-post-item:hover {
   transform: scale(1.05);
 }
 
@@ -173,4 +203,200 @@ section {
 
 .button:hover {
   background-color: #0056b3;
+}
+
+/* Home Main Section */
+.home-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: linear-gradient(to bottom right, #007ACC, #00A8E8); /* Lighter and brighter blue gradient */
+  padding: 20px;
+}
+
+.hero-section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-section button {
+  background-color: #007ACC; /* Updated to match the overall color scheme */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1em;
+}
+
+.features-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.feature {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.testimonials,
+.latest-blogs,
+.highlighted-essays,
+.comparison {
+  width: 100%;
+  max-width: 1200px;
+  margin-bottom: 40px;
+}
+
+.testimonials h2,
+.latest-blogs h2,
+.highlighted-essays h2,
+.comparison h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.testimonial,
+.blog-post,
+.highlighted-essay,
+.comparison-item {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.comparison-grid {
+  display: flex;
+  justify-content: space-around;
+}
+
+.comparison-item {
+  width: 45%;
+}
+
+/* Carousel Styles */
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+}
+
+.highlighted-essay-item,
+.testimonial-item,
+.blog-post-item {
+  transition: transform 0.3s ease;
+}
+
+.highlighted-essay-item:hover,
+.testimonial-item:hover,
+.blog-post-item:hover {
+  transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq {
+  background-color: rgba(240, 240, 240, 0.9); /* Light transparent background for readability */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.faq .MuiAccordion-root {
+  background-color: white;
+  box-shadow: none;
+  border: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.faq .MuiAccordionSummary-root {
+  background-color: #f7f7f7;
+  border-bottom: 1px solid #ddd;
+}
+
+.faq .MuiAccordionSummary-content {
+  font-size: 1.2em;
+}
+
+.faq .MuiAccordionDetails-root {
+  font-size: 1em;
+  padding: 15px;
+}
+
+/* Icon Styles */
+.icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+.cta-button {
+  background-color: #007ACC; /* Updated to match the overall color scheme */
+  color: white;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.cta-button:hover {
+  background-color: #0056b3;
+}
+
+/* Consistent Container Styles */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9); /* Light transparent background for readability */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Specific Section Adjustments */
+.comparison .container,
+.testimonials .container,
+.blog-posts .container,
+.faq .container {
+  background: none; /* Ensure section containers don't override the gradient */
+}
+
+/* Adjustments for Carousel Items */
+.react-multi-carousel-item {
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.highlighted-essay-item,
+.testimonial-item,
+.blog-post-item {
+  transition: transform 0.3s ease;
+}
+
+.highlighted-essay-item:hover,
+.testimonial-item:hover,
+.blog-post-item:hover {
+  transform: scale(1.05);
 }

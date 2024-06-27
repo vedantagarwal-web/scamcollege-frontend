@@ -1,6 +1,8 @@
+/* App.css */
+
 body {
   font-family: 'Arial', sans-serif;
-  background: linear-gradient(to bottom, #ff7e5f, #feb47b);
+  background: linear-gradient(to bottom right, #007ACC, #00A8E8); /* Updated gradient */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -15,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 button {
-  background-color: #ff7e5f;
+  background-color: #007ACC; /* Updated to match the overall color scheme */
   border: none;
   color: white;
   padding: 10px 20px;
@@ -28,5 +30,5 @@ button {
 }
 
 button:hover {
-  background-color: #feb47b;
+  background-color: #0056b3;
 }

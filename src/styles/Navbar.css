@@ -1,69 +1,62 @@
+/* Navbar.css */
 .navbar {
+  background-color: #1D1E2C;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
-  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
-}
-
-.navbar-brand {
-  display: flex;
-  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .navbar-logo {
-  height: 40px;
+  width: 150px;
+  height: auto;
 }
 
 .navbar-links {
-  display: flex;
   list-style: none;
-  margin: 0;
-  padding: 0;
+  display: flex;
   gap: 20px;
 }
 
 .navbar-links li {
-  margin: 0 10px;
+  display: inline;
 }
 
 .navbar-links a {
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1.1em;
   transition: color 0.3s;
 }
 
 .navbar-links a:hover {
-  color: #ffeb3b;
+  color: #00A8E8;
 }
 
 .navbar-user {
   display: flex;
+  gap: 10px;
   align-items: center;
 }
 
 .navbar-user span {
-  color: white;
   margin-right: 10px;
-  font-size: 16px;
 }
 
 .navbar-user button,
 .navbar-user a {
-  background-color: #00A8E8; /* Brighter cyan */
+  background-color: #00A8E8;
   color: white;
+  padding: 5px 10px;
   border: none;
-  padding: 10px 15px;
-  margin-left: 10px;
-  cursor: pointer;
   border-radius: 5px;
   text-decoration: none;
-  font-size: 16px;
   transition: background-color 0.3s;
 }
 
 .navbar-user button:hover,
 .navbar-user a:hover {
-  background-color: #1D1E2C; /* Dark blue */
+  background-color: #008BB5;
 }

@@ -1,17 +1,32 @@
+/* Footer.css */
 .footer {
-  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8);
-  color: #E0E0E0;
-  text-align: center;
+  background-color: #1D1E2C;
+  color: white;
   padding: 20px;
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
-.footer a {
-  color: #E0E0E0;
-  margin: 0 10px;
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: #00A8E8;
   text-decoration: none;
-  font-size: 16px;
+  transition: color 0.3s;
 }
 
-.footer a:hover {
-  text-decoration: underline;
+.footer-links a:hover {
+  color: #007BFF;
 }

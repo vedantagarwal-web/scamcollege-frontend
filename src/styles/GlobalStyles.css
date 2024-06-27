@@ -1,9 +1,12 @@
+/* GlobalStyles.css */
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8); /* Dark blue to cyan gradient */
-  color: white;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to bottom right, #007ACC, #00A8E8); /* Lighter and brighter blue gradient */
+  color: #333;
+  overflow-y: auto;
 }
 
 .app-container {
@@ -39,7 +42,7 @@ body {
 .form-container button {
   width: 100%;
   padding: 10px;
-  background-color: #00A8E8;
+  background-color: #007ACC;
   border: none;
   border-radius: 4px;
   color: white;
@@ -93,7 +96,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   color: white;
-  background: linear-gradient(to bottom right, #1D1E2C, #00A8E8); /* Dark blue to cyan gradient */
+  background: linear-gradient(to bottom right, #007ACC, #00A8E8); /* Lighter and brighter blue gradient */
   padding: 20px;
 }
 
@@ -113,7 +116,7 @@ a:hover {
 }
 
 .hero-section button {
-  background-color: #FF5722;
+  background-color: #007ACC; /* Updated to match the overall color scheme */
   padding: 10px 20px;
   border: none;
   border-radius: 5px;
@@ -194,14 +197,17 @@ a:hover {
 
 /* FAQ Section */
 .faq {
-  background-color: #f0f0f0;
+  background-color: rgba(240, 240, 240, 0.9); /* Light transparent background for readability */
+  padding: 40px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .faq .MuiAccordion-root {
   background-color: white;
   box-shadow: none;
   border: 1px solid #ddd;
-  margin: 10px  0;
+  margin: 10px 0;
 }
 
 .faq .MuiAccordionSummary-root {
@@ -227,7 +233,7 @@ a:hover {
 }
 
 .cta-button {
-  background-color: #FF5733;
+  background-color: #007ACC; /* Updated to match the overall color scheme */
   color: white;
   padding: 15px 30px;
   border: none;
@@ -237,5 +243,5 @@ a:hover {
 }
 
 .cta-button:hover {
-  background-color: #FF6E4A;
+  background-color: #0056b3;
 }

@@ -1,9 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { signOut } from 'firebase/auth';
+import { auth } from '../firebaseConfig';
 import '../styles/Navbar.css';
 import logo from '../assets/Black Beige Bold Framed Typography Planet Brand Business Logo.png'; // Adjust the path
 
-const Navbar = ({ user, onSignOut }) => {
+const Navbar = ({ user, setUser }) => {
+  const handleSignOut = async () => {
+    try {
+      await signOut(auth);
+      setUser(null);
+    } catch (error) {
+      console.error('Error signing out:', error);
+    }
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-brand">
@@ -22,7 +33,7 @@ const Navbar = ({ user, onSignOut }) => {
         {user ? (
           <>
             <span>Welcome, {user.email}</span>
-            <button onClick={onSignOut}>Sign Out</button>
+            <button onClick={handleSignOut}>Sign Out</button>
           </>
         ) : (
           <>

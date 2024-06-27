@@ -1,4 +1,3 @@
-// src/firebaseConfig.js
 import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider, signInWithPopup, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut } from 'firebase/auth';
 import { getFirestore, collection, getDocs, addDoc } from 'firebase/firestore';
@@ -22,57 +21,17 @@ const storage = getStorage(app);
 const functions = getFunctions(app);
 const db = getFirestore(app);
 
-async function addHighlightedEssay() {
-  try {
-    const docRef = await addDoc(collection(db, 'highlightedEssays'), {
-      title: 'Essay Title 1',
-      summary: 'This is a summary of highlighted essay 1.'
-    });
-    console.log('Document written with ID: ', docRef.id);
-  } catch (e) {
-    console.error('Error adding document: ', e);
-  }
-}
-
-// Add a document to blogPosts
-async function addBlogPost() {
-  try {
-    const docRef = await addDoc(collection(db, 'blogPosts'), {
-      title: 'First Blog Post',
-      excerpt: 'This is an excerpt for the first blog post.'
-    });
-    console.log('Document written with ID: ', docRef.id);
-  } catch (e) {
-    console.error('Error adding document: ', e);
-  }
-}
-
-// Add a document to testimonials
-async function addTestimonial() {
-  try {
-    const docRef = await addDoc(collection(db, 'testimonials'), {
-      message: 'This is a fantastic tool for generating unique and compelling essays!',
-name: 'John Doe',
-institution: 'Harvard University'
-});
-console.log('Document written with ID: ', docRef.id);
-} catch (e) {
-console.error('Error adding document: ', e);
-}
-}
 export {
-auth,
-GoogleAuthProvider,
-signInWithPopup,
-signInWithEmailAndPassword,
-createUserWithEmailAndPassword,
-signOut,
-db,
-functions,
-storage,
-collection,
-getDocs,
-addBlogPost,
-addHighlightedEssay,
-addTestimonial
+  auth,
+  GoogleAuthProvider,
+  signInWithPopup,
+  signInWithEmailAndPassword,
+  createUserWithEmailAndPassword,
+  signOut,
+  db,
+  functions,
+  storage,
+  collection,
+  getDocs,
+  addDoc,
 };
